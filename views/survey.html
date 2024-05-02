@@ -21,8 +21,9 @@
     <!-- get fruit choice -->
     <div class="form-group">
         <label class = control-label>Select a fruit</label>
+        <br>
             <repeat group = "{{ @fruits }}" value = "{{ @fruit }}">
-                <label><input type="radio" name="fruit" value="{{ @fruit }}">{{ ucfirst(@meal) }}</label>
+                <label><input type="radio" name="fruit" value="{{ @fruit }}">{{ ucfirst(@fruit) }}</label>
                 <br>
             </repeat>
     </div>
@@ -30,7 +31,7 @@
 
     <!-- submit button -->
     <div class="col-xs-3 ">
-        <button class="btn btn-primary" type="submit">Place Order</button>
+        <button class="btn btn-primary" type="submit">Submit</button>
     </div>
 </form>
 
