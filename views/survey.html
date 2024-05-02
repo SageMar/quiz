@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fruit Survey</title>
+</head>
+<body>
+<h1>Fruit Survey</h1>
+<form action="#" method="post" class="form-horizontal">
+
+    <!-- get name -->
+    <div class="form-group">
+        <label for="name" class="col-sm-4 control-label">Name</label>
+        <input class="form-control" type="text" name="name" id="name" >
+    </div>
+    <br>
+
+    <!-- get fruit choice -->
+    <div class="form-group">
+        <label class = control-label>Select a fruit</label>
+            <repeat group = "{{ @fruits }}" value = "{{ @fruit }}">
+                <label><input type="radio" name="fruit" value="{{ @fruit }}">{{ ucfirst(@meal) }}</label>
+                <br>
+            </repeat>
+    </div>
+    <br>
+
+    <!-- submit button -->
+    <div class="col-xs-3 ">
+        <button class="btn btn-primary" type="submit">Place Order</button>
+    </div>
+</form>
+
+</body>
+</html>
