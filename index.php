@@ -47,7 +47,6 @@ $f3->route('GET|POST /survey', function ($f3){
 
 // set up the summary page
 $f3->route('GET /summary', function ($f3) {
-    var_dump($f3->get('SESSION'));
     // add a views for the page
     // first create a template
     $view = new Template();

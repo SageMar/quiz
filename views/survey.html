@@ -23,7 +23,7 @@
         <label class = control-label>Select a fruit</label>
         <br>
             <repeat group = "{{ @fruits }}" value = "{{ @fruit }}">
-                <label><input type="radio" name="fruit" value="{{ @fruit }}">{{ ucfirst(@fruit) }}</label>
+                <label><input type="radio" name="fruits" value="{{ @fruit }}">{{ ucfirst(@fruit) }}</label>
                 <br>
             </repeat>
     </div>
